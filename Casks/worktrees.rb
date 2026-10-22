@@ -1,6 +1,6 @@
 cask "worktrees" do
-  version "1.0.0"
-  sha256 "fa05cebf7c236ba4ba361a34818feb01ed8167b9e9af9537687abc9c217ccbf6"
+  version "1.1.0"
+  sha256 "03d0c85d364ad0c3290fdf3c07d69d19dd278b701aa746ec695060e5f379281b"
 
   url "https://github.com/antonijap/worktrees/releases/download/v#{version}/Worktrees-#{version}.zip"
   name "Worktrees"
@@ -15,6 +15,7 @@ cask "worktrees" do
   depends_on macos: :sonoma
 
   app "Worktrees.app"
+  binary "#{appdir}/Worktrees.app/Contents/MacOS/Worktrees", target: "worktrees"
 
   zap trash: [
     "~/Library/Preferences/me.apek.worktrees.plist",
