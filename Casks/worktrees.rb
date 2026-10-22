@@ -1,6 +1,6 @@
 cask "worktrees" do
-  version "1.1.1"
-  sha256 "d0916f7b89d003a3022f431f697cb0fa52d4f79ddd2546745a6628d621ce4df6"
+  version "1.1.2"
+  sha256 "0281ee8f49c523dc9683b47ece3b96c8a9f60055c84f62f4160609a869e4286b"
 
   url "https://github.com/antonijap/worktrees/releases/download/v#{version}/Worktrees-#{version}.zip"
   name "Worktrees"
